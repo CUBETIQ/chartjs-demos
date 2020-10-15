@@ -1,7 +1,9 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 
-import { LineChartDemo, ChartProps } from "./LineChartDemo";
+import { LineChartDemo } from "./LineChartDemo";
+import { BarChartDemo } from "./BarChartDemo";
+import { ChartProps } from "../demos/ChartProps";
 
 export default {
   title: "Example/Chart",
@@ -9,7 +11,12 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<ChartProps> = (args) => <LineChartDemo />;
+const LineChartDemoTemplate: Story<ChartProps> = (args) => <LineChartDemo />;
 
-export const LineChart = Template.bind({});
-LineChart.args = {};
+const BarChartDemoTemplate: Story<ChartProps> = (args) => <BarChartDemo />;
+
+export const LineChart = LineChartDemoTemplate.bind({});
+LineChart.args = { };
+
+export const BarChart = BarChartDemoTemplate.bind({});
+BarChart.args = { };

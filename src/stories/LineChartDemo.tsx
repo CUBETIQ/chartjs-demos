@@ -1,10 +1,7 @@
 import React from "react";
+import { ChartProps } from "../demos/ChartProps";
 import { LineChart } from "../demos/LineChart";
 import "./chart.css";
-
-export interface ChartProps {
-  chartConfig?: any;
-}
 
 /**
  * Primary UI component for user interaction

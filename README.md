@@ -1,4 +1,5 @@
 # Chart.js Demos
+### View a [Demo](https://cubetiq.github.io/chartjs-demos)
 
 **Install**
 
